@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--
+           	作者：赵双龙  【AZureDracula逆天月尨】
+           	邮箱：1747004181@qq.com
+           	时间：2018-09-15
+     	  	描述：逆浪开帆难
+     	  		   天兵曜神武   
+     	  		   月落锦屏虚   
+     	  		   尨麟漾嶰谷
+
+           -->
+		<meta charset="utf-8">
+		<title>网上高考志愿填报系统----by：月尨</title>
+		<script>
+			function checkForm() {
+				alert("填报完成，祝你好运！");
+			}
+		</script>
+
+	</head>
+
+	<body bgcolor="aliceblue">
+		<div align="center" style="background-color: gainsboro" id="title">
+			<font size="7" color="red"><b>网上高考志愿填报系统</b></font>
+		</div>
+		<br/><br/><br/><br/>
+		<div align="center">
+			<form action="index.html" onsubmit="checkForm()" name="first" id="first" class="first">
+				<table align="center" width="90%" border="1">
+					<caption><b><font size="6">个人信息</font></b></caption>
+					<tr height="50px" width="50px" id="1">
+						<td height="100px" id="name">
+							<label>考生姓名</label>
+							<input required="required" type="text" maxlength="5" align="center" size="10" placeholder="请输入姓名">
+
+						</td>
+						<td height="100px" id="sex">
+							<label>性别 </label>
+							<input type="radio" name="sex" required="required" checked="checked">男
+							<input type="radio" name="sex" required="required">女
+						</td>
+						<td height="100px" id="age">
+							<label>年龄</label>
+							<input type="number" max="150" min="0" required="required" maxlength="3px">
+						</td>
+						<td height="100px" colspan="2" rowspan="3" align="center">
+							请提交个人一寸免冠照<br/><br/>
+							<img  src="img/u=3289761550,697278018&fm=26&gp=0.jpg">
+							<br/><br/><br/><br/>
+							<input type="file"  value="提交照片" title="大小不做要求" id="666" name="666">
+						</td>
+						
+
+					</tr>
+					<tr height="50px" width="50px" id="2">
+						<td height="100px" id="mz">
+							<label>民族</label>
+							<select required="required">
+
+								<optgroup label="民族"></optgroup>
+								<option hidefocus="false">&nbsp;</option>
+								<option>汉族</option>
+								<option>回族</option>
+								<option>维吾尔族</option>
+								<option>哈萨克族</option>
+								<option>蒙古族</option>
+								<option>塔吉克族</option>
+								<option>柯尔克孜族</option>
+								<option>锡伯族</option>
+								<option>乌孜别克族</option>
+								<option>塔塔尔族</option>
+								<option>达斡尔族</option>
+								<option>藏族</option>
+								<option>俄罗斯族</option>
+								<option>独龙族</option>
+							</select>
+						</td>
+						<td height="100px" id="zzmm">
+							<label>政治面貌</label>
+							<select required="required">
+								<optgroup label="政治面貌">
+									<option hidefocus="false">&nbsp;</option>
+									<option>群众</option>
+									<option>团员</option>
+									<option>党员</option>
+								</optgroup>
+							</select>
+						</td>
+						<td height="100px" id="hklx">
+
+							<label>电话</label><input required="required" type="tel" pattern="[0-9]{11}" maxlength="11">
+							<p></p>
+							<label>邮箱</label><input type="email">
+						</td>
+					</tr>
+					<tr height="50px" width="50px" id="3">
+						<td height="100px" id="kslb">
+							<label>考生类别</label>
+							<select required="required">
+								<optgroup label="考生类别">
+									<option hidefocus="false">&nbsp;</option>
+									<option>理工类</option>
+									<option>文史类</option>
+								</optgroup>
+							</select>
+						</td>
+						<td height="100px" id="favorcolor">
+							<label>喜欢的颜色</label>
+							<input type="color">
+						</td>
+						<td height="100px" id="love">
+							<label>兴趣爱好</label>
+							<input type="checkbox">动漫
+							<input type="checkbox">电视剧
+							<input type="checkbox">音乐
+							<input type="checkbox">舞蹈
+							<input type="checkbox">鬼畜
+							<input type="checkbox">游戏
+							<input type="checkbox">体育
+							<input type="checkbox">科技
+							<input type="checkbox">看书
+
+						</td>
+					</tr>
+					<tr height="50px" width="50px" id="4">
+						<td height="100px" id="reward">
+							<label>重要荣誉</label>
+							<p></p>
+							<input type="text" maxlength="20" placeholder="简述荣誉，没有可不填">
+							<input type="text" maxlength="20" placeholder="简述荣誉，没有可不填">
+							<input type="text" maxlength="20" placeholder="简述荣誉，没有可不填">
+						</td>
+						<td height="100px" id="birth date">
+							<label>出生日期</label>
+							<input required="required" type="date" max="2018-01-01" min="1950-01-01">
+						</td>
+						<td height="100px" id="zkz">
+							<label>考试准考证号</label>
+							<input required="required" maxlength="14" pattern="[0-9]{14}" type="text" placeholder="请输入准考证号码" />
+						</td>
+						<td height="100px" id="sfz">
+							<label>身份证号码</label>
+							<input required="required" maxlength="18" pattern="[0-9]{18}" pattern="[A-Z]{1}" type="text" placeholder="请输入身份证号码" />
+						</td>
+						<td height="100px" id="hometown">
+							<label>籍贯</label>
+							<select required="required">
+								<optgroup label="籍贯"></optgroup>
+								<option>无</option>
+								<option>湖南</option>
+								<option>陕西</option>
+								<option>新疆</option>
+								<option>北京</option>
+								<option>天津</option>
+								<option>辽宁</option>
+								<option>吉林</option>
+								<option>黑龙江</option>
+								<option>上海</option>
+								<option>江苏</option>
+								<option>浙江</option>
+								<option>安徽</option>
+								<option>福建</option>
+								<option>山东</option>
+								<option>湖北</option>
+								<option>广东</option>
+								<option>重庆</option>
+								<option>四川</option>
+								<option>甘肃</option>
+								<option>河北</option>
+								<option>山西</option>
+								<option>内蒙古</option>
+								<option>河南</option>
+								<option>海南</option>
+								<option>贵州</option>
+								<option>广西</option>
+								<option>云南</option>
+								<option>西藏</option>
+								<option>青海</option>
+								<option>宁夏</option>
+								<option>江西</option>
+								<option>香港</option>
+								<option>澳门</option>
+								<option>台湾</option>
+							</select>
+						</td>
+
+					</tr>
+					<tr height="50px" width="50px" id="5">
+						<th height="100px" colspan="5"><b><font size="6">志愿填报</font></b></th>
+						
+					</tr>
+					
+					
+					<tr height="50px" width="50px" id="5.5">
+						<th height="100px" ><b><font size="6">高考成绩</font></b></th>
+						<td>
+							<label>数学</label>
+							<input size="3" align="center" maxlength="3" max="150" min="0" type="text" pattern="[0-9]{3}" />
+						</td>
+						<td>
+							<label>语文</label>
+							<input size="3" align="center" maxlength="3" max="150" min="0" type="text" pattern="[0-9]{3}" />
+						</td>
+						<td>
+							<label>英语</label>
+							<input size="3" align="center" maxlength="3" max="150" min="0" type="text" pattern="[0-9]{3}" />
+						</td>
+						<td>
+							<label>理综</label>
+							<input size="3" align="center" maxlength="3" max="300" min="0" type="text" pattern="[0-9]{3}" />
+						</td>
+					</tr>
+					
+					
+					
+					<tr id="6">
+						<th align="center">
+							<a href="https://gkcx.eol.cn/"><input type="button"></a>提前批次的同学点击此处</th>
+						<th>院校代码</th>
+						<th>专业代码</th>
+						<th>专业代码</th>
+						<th>专业代码</th>
+					</tr>
+
+					<!--
+                    	忘记加入提前批次了！GG
+                    -->
+
+					<tr id="7">
+						<th rowspan="9" align="center">
+							<h1><p>第</p><p>一</p><p>批</p><p>次</p></h1></th>
+						<td align="center">
+							<input required="required" type="text" maxlength="5" pattern="[0-9]{3-5}">
+						</td>
+						<td align="center">
+							<input required="required" type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="8">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="9">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="10">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="11">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="12">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="13">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+					</tr>
+					<tr id="14">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="15">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="16">
+						<th rowspan="9" align="center">
+							<h1><p>第</p><p>二</p><p>批</p><p>次</p></h1></th>
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="17">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="18">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="19">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="20">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="21">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="22">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+					</tr>
+					<tr id="23">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+					<tr id="24">
+						<td align="center">
+							<input type="text" maxlength="5" pattern="[0-9]">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+						<td align="center">
+							<input type="number" maxlength="2" pattern="[0-9]" min="0" max="99">
+						</td>
+
+					</tr>
+
+					<tr id="last">
+						<th align="center" colspan="5">
+							<input type="submit" value="确认提交"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="reset" value="全部重置">
+						</th>
+					</tr>
+
+				</table>
+			</form>
+		</div>
+
+	</body>
+
+</html>
